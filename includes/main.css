@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat");
+body {
+  background: #1F2326;
+  overflow-x: hidden;
+  font-family: 'Montserrat';
+}
+
+.pink-big-circle {
+  background: #FF4656;
+  position: absolute;
+  display: inline;
+  width: 60em;
+  height: 60em;
+  border-radius: 100%;
+  margin: -25em 0 0 -20em;
+  z-index: -1;
+}
+
+.grey-big-circle {
+  background: #292C31;
+  position: absolute;
+  display: inline;
+  width: 60em;
+  height: 60em;
+  border-radius: 100%;
+  margin: 0em -30em -50em 0em;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+}
+
+.header {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .hr-title {
+  color: #F8F8F8;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 4px 0 0 5px;
+}
+
+.header .fa-logo {
+  width: 40px;
+  height: 40px;
+}
+
+.top-circle-group {
+  position: absolute;
+  display: inline;
+  right: 0px;
+  margin: 0 25px 0 0;
+  z-index: -1;
+}
+
+.top-circle-group .top-pink-circle {
+  background: #FF4656;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.top-circle-group .top-white-circle {
+  background: #EFEFEF;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin-top: 1rem;
+}
+
+.top-circle-group .top-gray-circle {
+  background: #505155;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin-top: 0.5rem;
+  margin-right: -15px;
+  float: right;
+}
+
+.bottom-circle-group {
+  position: absolute;
+  display: inline;
+  left: 10px;
+  bottom: -10em;
+  margin: 0 25px 0 0;
+  z-index: -1;
+}
+
+.bottom-circle-group .top-white-circle {
+  background: #EFEFEF;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-top: -0.2rem;
+  margin-bottom: -10em;
+}
+
+.bottom-circle-group .top-gray-circle {
+  background: #505155;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  margin-top: 0.5rem;
+  margin-right: -15px;
+}
+
+.container {
+  background-image: url(includes/img/cr-background.png);
+  width: 90%;
+  height: 40em;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 4em;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.container .container-header {
+  width: 100%;
+  height: 4em;
+  background: #1F2326;
+  border-radius: 10px 10px 0 0;
+}
+/*# sourceMappingURL=main.css.map */
