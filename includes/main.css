@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
 body {
+  margin: 0 auto;
+  padding: 0;
   background: #1F2326;
   overflow-x: hidden;
   font-family: 'Montserrat';
@@ -110,7 +112,8 @@ body {
 }
 
 .container {
-  background-image: url(includes/img/cr-background.png);
+  background: url("img/cr-background.png"), no-repeat, #FF4656;
+  background-size: cover;
   width: 90%;
   height: 40em;
   border-radius: 10px;
@@ -122,9 +125,127 @@ body {
 }
 
 .container .container-header {
-  width: 100%;
-  height: 4em;
   background: #1F2326;
   border-radius: 10px 10px 0 0;
+  height: 2.1rem;
+  padding: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .container-header .cr-hr-title {
+  width: 55px;
+  margin-right: 1rem;
+}
+
+.container .container-header .cr-hr-hline {
+  position: relative;
+}
+
+.container .container-header .cr-hr-gline {
+  height: 36px;
+  margin-right: 1rem;
+}
+
+.container .container-header .cr-hr-logo {
+  width: 38px;
+  height: 38px;
+  margin-right: 3rem;
+}
+
+.container .container-header .ch-container {
+  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: relative;
+  top: calc(50% - 7px);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.container .container-header .ch-container .cr-hr-link {
+  color: #fff;
+  margin-right: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  vertical-align: middle;
+  display: table-cell;
+  letter-spacing: 0.1em;
+}
+
+.container .container-header .ch-container .cr-hr-link:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container .container-header .ch-container .cr-hr-link:hover .ch-dline {
+  margin-top: 3px;
+  background: #fff;
+  opacity: 1;
+  height: 1px;
+  width: 100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.container .container-header .ch-container .ch-dline {
+  margin-top: 3px;
+  background: #fff;
+  opacity: 0.7;
+  height: 0px;
+  width: 0%;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.container .container-header .ch-container .cr-hr-link-ch-right {
+  color: #fff;
+  margin-right: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  vertical-align: middle;
+  display: table-cell;
+  letter-spacing: 0.1em;
+}
+
+.container .container-header .ch-container .cr-hr-check {
+  display: inline;
+  position: relative;
+  top: -3px;
+  left: 5px;
+}
+
+.container .container-header .ch-container .ch-right-check {
+  position: relative;
+  top: 5px;
+}
+
+.container .container-header .ch-container .ch-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container .container-header .ch-container .ch-ava {
+  position: relative;
+  background: url("img/akali.png") no-repeat;
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  margin-right: 0.5rem;
+  top: -0.5rem;
 }
 /*# sourceMappingURL=main.css.map */
