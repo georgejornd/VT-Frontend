@@ -203,17 +203,6 @@ body {
   transition: 0.8s;
 }
 
-.container .container-header .ch-container .cr-hr-link-ch-right {
-  color: #fff;
-  margin-right: 50px;
-  font-weight: 600;
-  font-size: 14px;
-  cursor: pointer;
-  vertical-align: middle;
-  display: table-cell;
-  letter-spacing: 0.1em;
-}
-
 .container .container-header .ch-container .cr-hr-check {
   display: inline;
   position: relative;
@@ -247,5 +236,72 @@ body {
   border-radius: 100%;
   margin-right: 0.5rem;
   top: -0.5rem;
+}
+
+.container .container-header .ch-container .cr-hr-link .ch-n-container {
+  position: relative;
+  top: 1em;
+  left: -40%;
+  width: 150%;
+  text-align: center;
+  padding: 0.4rem;
+  margin-top: 1rem;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.container .container-header .ch-container .cr-hr-link .ch-n-container .ch-n {
+  font-size: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.container .container-header .ch-container .cr-hr-link:hover .ch-n-container {
+  position: relative;
+  top: 0;
+  left: -40%;
+  width: 150%;
+  text-align: center;
+  padding: 0.4rem;
+  margin-top: 1rem;
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 10px;
+  visibility: visible;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 10;
+}
+
+.container .container-header .ch-container .cr-hr-link:hover .ch-n-container .ch-n {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.container .container-header .ch-container .cr-hr-link:not(hover) .ch-n-container {
+  position: relative;
+  left: -40%;
+  width: 150%;
+  text-align: center;
+  padding: 0.4rem;
+  margin-top: 1rem;
+  border: 1px solid #fff;
+  background: #fff;
+  border-radius: 10px;
+  visibility: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.container .container-header .ch-container .cr-hr-link:not(hover) .ch-n-container .ch-n {
+  color: #000;
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=main.css.map */
