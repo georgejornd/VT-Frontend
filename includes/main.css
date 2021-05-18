@@ -1,4 +1,9 @@
+@import url("fonts.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat");
+.Druk-Wide {
+  font-family: 'Druk Wide Bold';
+}
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -115,13 +120,166 @@ body {
   background: url("img/cr-background.png"), no-repeat, #FF4656;
   background-size: cover;
   width: 90%;
-  height: 40em;
+  height: 54em;
   border-radius: 10px;
   margin: 0 auto;
   margin-top: 4em;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1;
+}
+
+.container .agents {
+  float: left;
+  position: relative;
+  display: inline;
+  width: 3.5em;
+  top: 3em;
+  left: 90px;
+}
+
+.container .ults-group {
+  top: 6em;
+  right: 5em;
+  position: relative;
+  font-family: 'Druk Wide Bold';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .ults-group .ult-item {
+  position: relative;
+  padding: 16px;
+  border: 1px solid #000;
+  background: #fff;
+  width: 500px;
+  margin-left: 2em;
+  z-index: 3;
+}
+
+.container .ults-group .ult-item .ut-block {
+  position: absolute;
+  display: inline;
+  margin-left: 65%;
+  width: 120px;
+  height: 120px;
+  background: #FF4656;
+  bottom: 0;
+  z-index: 1;
+}
+
+.container .ults-group .ult-item .ut-img {
+  float: right;
+  position: relative;
+  display: inline;
+  width: 110px;
+  height: 110px;
+  z-index: 2;
+}
+
+.container .ults-group .ult-item .ut-gtitle {
+  color: #C4C4C4;
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 0.7rem;
+  z-index: 2;
+}
+
+.container .ults-group .ult-item .ut-btitle {
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 0.7rem;
+  z-index: 2;
+}
+
+.container .ults-group .ult-item .ut-dtext {
+  color: #1F2326;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  z-index: 2;
+}
+
+.container .ults-group .ult-block {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 0;
+  height: 0;
+  padding: 90px;
+}
+
+.container .characters {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 2.5em;
+  left: 10em;
+  z-index: 1;
+}
+
+.container .characters .character {
+  position: relative;
+  margin-right: 2em;
+}
+
+.container .characters .character .skills-group {
+  position: absolute;
+  left: 2em;
+  bottom: -0.5em;
+  background: #1F2326;
+  border: 2px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .characters .character .skills-group .sg-img {
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+}
+
+.container .characters .character .ci-wb {
+  background: #fff;
+  border: 2px solid #000;
+}
+
+.container .characters .character .character-img {
+  width: 85%;
+  background: #1F2326;
+}
+
+.container .characters .character .b {
+  width: 82%;
+  margin-right: 3em;
+}
+
+.container .characters .character .w-b {
+  width: 77%;
+  background: #F8F8F8;
+  margin-right: 3em;
+}
+
+.container .characters .character .c-texts {
+  position: absolute;
+  left: -1em;
+  top: 1em;
+}
+
+.container .characters .character .c-texts .c-dtext {
+  position: relative;
+  width: 40px;
+}
+
+.container .characters .character .c-texts .c-rtext {
+  position: absolute;
+  left: 2em;
+  font-family: 'Druk Wide Bold';
+  font-size: 24px;
+  font-weight: 500;
+  color: #FF4656;
 }
 
 .container .container-header {
@@ -250,6 +408,7 @@ body {
   border-radius: 10px;
   visibility: hidden;
   opacity: 0;
+  z-index: 2;
 }
 
 .container .container-header .ch-container .cr-hr-link .ch-n-container .ch-n {
@@ -272,6 +431,7 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 10;
+  z-index: 2;
 }
 
 .container .container-header .ch-container .cr-hr-link:hover .ch-n-container .ch-n {
@@ -295,6 +455,7 @@ body {
   visibility: hidden;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  z-index: 2;
 }
 
 .container .container-header .ch-container .cr-hr-link:not(hover) .ch-n-container .ch-n {
@@ -303,5 +464,14 @@ body {
   margin-bottom: 0.5rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+.container .container-footer {
+  bottom: -4.5em;
+  position: relative;
+  height: 3em;
+  background: #fff;
+  border-radius: 0px 0px 10px 10px;
+  z-index: 2;
 }
 /*# sourceMappingURL=main.css.map */
